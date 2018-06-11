@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd">
+        
+	<!-- 默认构造创建,并通过property 注入属性值 -->
+	<bean id="account" class="spring.Account">
+		<property name="name" value="I am SpringIOC1" />
+		<property name="pwd" value="123" />
+	</bean>
+	
+	<!-- 包扫描 -->
+	<context:component-scan  base-package="spring" />
+	
+	<aop:aspectj-autoproxy />
+	<!-- 定义aspect类 -->
+    <bean name="logAspect" class="spring.LogAspect"/>
+	
+</beans>
