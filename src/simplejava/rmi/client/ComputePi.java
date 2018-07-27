@@ -8,12 +8,12 @@ import simplejava.rmi.Compute;
 public class ComputePi {
 	
 	public static void main(String args[]) {
-		if (System.getSecurityManager() == null) {
-			System.setSecurityManager(new SecurityManager());
-		}
+//		if (System.getSecurityManager() == null) {
+//			System.setSecurityManager(new SecurityManager());
+//		}
 		try {
 			String name = "Compute";
-			Registry registry = LocateRegistry.getRegistry("localhost");
+			Registry registry = LocateRegistry.getRegistry();
 			Compute comp = (Compute) registry.lookup(name);
 			Pi task = new Pi();
 			double pi = comp.executeTask(task);

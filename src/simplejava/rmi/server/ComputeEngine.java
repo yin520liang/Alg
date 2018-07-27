@@ -25,9 +25,8 @@ public class ComputeEngine implements Compute{
         try {
             String name = "Compute";
             Compute engine = new ComputeEngine();
-            Compute stub =
-                (Compute) UnicastRemoteObject.exportObject(engine, 0);
             Registry registry = LocateRegistry.getRegistry();
+            Compute stub = (Compute) UnicastRemoteObject.exportObject(engine, 0);          
             registry.rebind(name, stub);
             System.out.println("ComputeEngine bound");
         } catch (Exception e) {
