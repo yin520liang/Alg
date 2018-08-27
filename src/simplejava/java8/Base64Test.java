@@ -14,7 +14,7 @@ import java.util.Base64;
  */
 public class Base64Test {
 	public static void main(String[] args) {
-		final String text = "http://www.baidu.com?key=汽车 网";
+		final String text = "elastic=MZsecret@2018";
 
 		final String encoded = Base64.getUrlEncoder().encodeToString(text.getBytes(StandardCharsets.UTF_8));
 		System.out.println(encoded); // QmFzZTY0IGZpbmFsbHkgaW4gSmF2YSA4IQ==
