@@ -13,6 +13,7 @@ import redis.clients.jedis.ShardedJedisPipeline;
 /**
  * @Title PipelineTest
  * @Description redis批量操作示例
+ * 使用场景
  * @Author lvzhaoyang
  * @Date 2018年4月9日
  */

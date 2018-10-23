@@ -3,9 +3,11 @@
  */
 package test;
 
-import java.lang.reflect.Method;
 import java.math.BigInteger;
 import java.security.MessageDigest;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import com.sun.org.apache.xml.internal.security.exceptions.Base64DecodingException;
 
@@ -23,9 +25,10 @@ public class TestMain {
 	 * @date 2017年12月21日上午9:31:50
 	 *
 	 * @param args
+	 * @throws ParseException 
 	 * @throws Base64DecodingException 
 	 */
-	public static void main(String[] args) {
+	public static void main(String[] args) throws ParseException {
 		
 //		for(Type type : B.class.getGenericInterfaces()) {
 //			System.out.println(type.getTypeName());
@@ -42,7 +45,20 @@ public class TestMain {
 //			System.out.println(m.getName());
 //		}
 //		String pwd = "mz@123456";
-		System.out.println("defaultGroup".hashCode());
+//		char[] cs = "品牌篇".toCharArray();
+//		System.out.println(Integer.toHexString((int) cs[0]));
+//		System.out.println(Integer.toHexString((int) cs[1]));
+//		Integer a1 = 3;
+//		Integer a2 = 3;
+//		Integer a3 = 300;
+//		Integer a4 = 300;
+//		System.out.println(a1 == a2);
+//		System.out.println(a3 == a4);
+//		Date d1 = new Date(1535990400000L);
+//		System.out.println(d1.toString());
+		System.out.println(null instanceof String);
+//		Date d2 = new Date(0L);
+//		System.out.println(d2.toString());
 	}
 
 	public static String getMD5(String str) {
