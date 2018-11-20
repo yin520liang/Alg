@@ -6,8 +6,8 @@ package test;
 import java.math.BigInteger;
 import java.security.MessageDigest;
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.util.ArrayList;
+import java.util.List;
 
 import com.sun.org.apache.xml.internal.security.exceptions.Base64DecodingException;
 
@@ -56,9 +56,11 @@ public class TestMain {
 //		System.out.println(a3 == a4);
 //		Date d1 = new Date(1535990400000L);
 //		System.out.println(d1.toString());
-		System.out.println(null instanceof String);
 //		Date d2 = new Date(0L);
 //		System.out.println(d2.toString());
+		
+		int a = 1;
+		System.out.println(Number.class.isAssignableFrom(int.class));
 	}
 
 	public static String getMD5(String str) {
