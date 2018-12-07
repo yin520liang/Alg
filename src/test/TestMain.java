@@ -59,8 +59,8 @@ public class TestMain {
 //		Date d2 = new Date(0L);
 //		System.out.println(d2.toString());
 		
-		int a = 1;
-		System.out.println(Number.class.isAssignableFrom(int.class));
+		String testStr = "select 1 from table1 where id= :id";
+		System.out.println(String.format(testStr, 1));
 	}
 
 	public static String getMD5(String str) {
