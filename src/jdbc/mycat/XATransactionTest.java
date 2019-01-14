@@ -6,15 +6,23 @@ package jdbc.mycat;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.Properties;
 import java.util.UUID;
 
 import com.mysql.jdbc.jdbc2.optional.MysqlDataSource;
+
+import jdbc.PropertiesReader;
 
 /**
  * @Title XATransactionTest
  * XA transaction test
  */
 public class XATransactionTest {
+	private static String user;
+	private static String password;
+	private static String address;
+	private static String db;
+
 
 	/**
 	 * @Description
@@ -22,8 +30,18 @@ public class XATransactionTest {
 	 * @Date 2018年4月23日
 	 */
 	public static void main(String[] args) {
-		String url1 = "jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=utf8&useSSL=false";
-		String url2 = "jdbc:mysql://127.0.0.1:3307/test?useUnicode=true&characterEncoding=utf8&useSSL=false";
+		Properties prop = PropertiesReader.load("resources/config/db.config");
+		user = prop.getProperty("db.local.user");
+		password = prop.getProperty("db.local.password");
+		address = prop.getProperty("db.local.url");
+		db = prop.getProperty("db.local.name");
+		
+		String url1 = String.format(
+				"jdbc:mysql://%s/%s?user=%s&password=%s&useUnicode=true&characterEncoding=utf8&useSSL=false",
+				address, db, user, password);
+		String url2 = String.format(
+				"jdbc:mysql://%s/%s?user=%s&password=%s&useUnicode=true&characterEncoding=utf8&useSSL=false",
+				address, db, user, password);
 
 		Connection conn1 = null, conn2 = null;
 		Statement stmt1 = null, stmt2 = null;

@@ -8,7 +8,9 @@ import java.sql.Connection;
 import java.sql.Driver;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.Properties;
 
+import org.apache.logging.log4j.util.PropertiesUtil;
 import org.springframework.jdbc.datasource.SimpleDriverDataSource;
 
 import com.mysql.jdbc.jdbc2.optional.MysqlDataSource;
@@ -21,8 +23,18 @@ import com.mysql.jdbc.jdbc2.optional.MysqlDataSource;
  *  <li>2. DataSource 
  */
 public class JdbcTest {
+	
+	private static String user;
+	private static String password;
+	private static String address;
+	private static String db;
 
 	public static void main(String[] args) {
+		Properties prop = PropertiesReader.load("resources/config/db.config");
+		user = prop.getProperty("db.local.user");
+		password = prop.getProperty("db.local.password");
+		address = prop.getProperty("db.local.url");
+		db = prop.getProperty("db.local.name");
 		connectByDataSource();
 	}
 
@@ -33,7 +45,8 @@ public class JdbcTest {
 
 //		Class.forName("com.mysql.jdbc.Driver");
 		// Driver类在加载时会将自己注册到DriverManager
-		String url = "jdbc:mysql://127.0.0.1:3306/mm?user=root&password=root&useUnicode=true&characterEncoding=utf8&useSSL=false";
+		String url = String.format("jdbc:mysql://%s/%s?user=%s&password=%s&useUnicode=true&characterEncoding=utf8&useSSL=false"
+				,address, db, user, password);
 		Connection conn = null;
 		try {
 			conn = DriverManager.getConnection(url);
@@ -58,7 +71,8 @@ public class JdbcTest {
 	
 	private static void connectByDataSource() {
 		MysqlDataSource dataSource = new MysqlDataSource();
-		String url = "jdbc:mysql://127.0.0.1:3306/mm?useUnicode=true&characterEncoding=utf8&useSSL=false";
+		String url = String.format("jdbc:mysql://%s/%s?user=%s&password=%s&useUnicode=true&characterEncoding=utf8&useSSL=false"
+						, address, db, user, password);
 		dataSource.setUrl(url);
 		Connection conn = null;
 		try {
@@ -81,7 +95,8 @@ public class JdbcTest {
 	}
 	
 	private static void connectBySpringWithoutTransaction() {	
-		String url = "jdbc:mysql://127.0.0.1:3306/mm?useUnicode=true&characterEncoding=utf8&useSSL=false";
+		String url = String.format("jdbc:mysql://%s/%s?user=%s&password=%s&useUnicode=true&characterEncoding=utf8&useSSL=false",
+				address, db, user, password);
 		Driver driver = null;
 		try {
 			driver = DriverManager.getDriver(url);
@@ -111,7 +126,7 @@ public class JdbcTest {
 	}
 	
 	private static void connectBySpringWithTransaction() {
-		
+
 	}
 	
 

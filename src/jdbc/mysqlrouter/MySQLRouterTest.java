@@ -7,8 +7,11 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.Properties;
 
 import com.mysql.jdbc.jdbc2.optional.MysqlDataSource;
+
+import jdbc.PropertiesReader;
 
 /**
  * @Title MySQLRouterTest
@@ -17,6 +20,10 @@ import com.mysql.jdbc.jdbc2.optional.MysqlDataSource;
  * @Date 2018年4月24日
  */
 public class MySQLRouterTest {
+	private static String user;
+	private static String password;
+	private static String address;
+	private static String db;
 
 	/**
 	 * @Description
@@ -24,8 +31,18 @@ public class MySQLRouterTest {
 	 * @Date 2018年4月24日
 	 */
 	public static void main(String[] args) {
-		String writeUrl = "jdbc:mysql://127.0.0.1:7001/test?user=root&password=root&useUnicode=true&characterEncoding=utf8&useSSL=false";
-		String readUrl = "jdbc:mysql://127.0.0.1:7002/test?user=root&password=MZtest2018!&useUnicode=true&characterEncoding=utf8&useSSL=false";
+		Properties prop = PropertiesReader.load("resources/config/db.config");
+		user = prop.getProperty("db.local.user");
+		password = prop.getProperty("db.local.password");
+		address = prop.getProperty("db.local.url");
+		db = prop.getProperty("db.local.name");
+
+		String writeUrl = String.format(
+				"jdbc:mysql://%s/%s?user=%s&password=%s&useUnicode=true&characterEncoding=utf8&useSSL=false", address,
+				db, user, password);
+		String readUrl = String.format(
+				"jdbc:mysql://%s/%s?user=%s&password=%s&useUnicode=true&characterEncoding=utf8&useSSL=false",
+				address, db, user, password);
 		Connection writeCon = null, readCon = null;
 
 		String insertSql = "insert into t2(id, name) values (1001, 'This is for insert');";
@@ -36,14 +53,14 @@ public class MySQLRouterTest {
 			try {
 				Statement insertStmt = writeCon.createStatement();
 				Statement selectStmt = readCon.createStatement();
-				
+
 				int res = insertStmt.executeUpdate(insertSql);
 				ResultSet rs = selectStmt.executeQuery(selectSql);
-				while(rs.next()) {
+				while (rs.next()) {
 					System.out.println(rs.getString("name"));
 				}
 				rs.close();
-				
+
 				insertStmt.close();
 				selectStmt.close();
 			} catch (SQLException e) {

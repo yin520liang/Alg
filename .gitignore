@@ -1,6 +1,7 @@
 
 # common
 logs/
+resources/config/
 
 # maven
 build/

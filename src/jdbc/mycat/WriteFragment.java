@@ -7,22 +7,37 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.Properties;
 
 import com.mysql.jdbc.jdbc2.optional.MysqlDataSource;
+
+import jdbc.PropertiesReader;
 
 /**
  * @Title WriteFragment
  * @Description 写分片测试
  */
 public class WriteFragment {
+	private static String user;
+	private static String password;
+	private static String address;
+	private static String db;
 	
 	private static int ID_INC = 0;
 	
 	private static Connection conn = null;
 	
 	public static void main(String[] args) {
+		Properties prop = PropertiesReader.load("resources/config/db.config");
+		user = prop.getProperty("db.local.user");
+		password = prop.getProperty("db.local.password");
+		address = prop.getProperty("db.local.url");
+		db = prop.getProperty("db.local.name");
+		
 		MysqlDataSource dataSource = new MysqlDataSource();
-		String url = "jdbc:mysql://127.0.0.1:8066/TEST?useUnicode=true&characterEncoding=utf8&useSSL=false";
+		String url = String.format(
+				"jdbc:mysql://%s/%s?user=%s&password=%s&useUnicode=true&characterEncoding=utf8&useSSL=false",
+				address, db, user, password);
 		dataSource.setUrl(url);
 		try {		
 			conn = dataSource.getConnection();
