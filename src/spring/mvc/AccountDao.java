@@ -1,7 +1,7 @@
 /**
  * 
  */
-package spring;
+package spring.mvc;
 
 /**
  * @Title AccountDao

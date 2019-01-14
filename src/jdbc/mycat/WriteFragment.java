@@ -22,7 +22,7 @@ public class WriteFragment {
 	
 	public static void main(String[] args) {
 		MysqlDataSource dataSource = new MysqlDataSource();
-		String url = "jdbc:mysql://127.0.0.1:8066/TEST?user=root&password=123456&useUnicode=true&characterEncoding=utf8&useSSL=false";
+		String url = "jdbc:mysql://127.0.0.1:8066/TEST?useUnicode=true&characterEncoding=utf8&useSSL=false";
 		dataSource.setUrl(url);
 		try {		
 			conn = dataSource.getConnection();

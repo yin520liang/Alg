@@ -1,7 +1,7 @@
 /**
  * 
  */
-package spring;
+package spring.mvc;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.After;

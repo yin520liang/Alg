@@ -1,7 +1,7 @@
 /**
  * 
  */
-package spring;
+package spring.mvc;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;

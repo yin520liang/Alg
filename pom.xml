@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>yang</groupId>
@@ -32,7 +33,7 @@
 	</build>
 
 	<dependencies>
-	
+
 		<!-- http -->
 		<dependency>
 			<groupId>org.apache.httpcomponents</groupId>
@@ -95,6 +96,31 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
+
+		<!-- feign-core -->
+		<dependency>
+			<groupId>io.github.openfeign</groupId>
+			<artifactId>feign-core</artifactId>
+			<version>9.7.0</version>
+		</dependency>
+		<dependency>
+			<groupId>io.github.openfeign</groupId>
+			<artifactId>feign-slf4j</artifactId>
+			<version>9.7.0</version>
+		</dependency>
+		<dependency>
+			<groupId>io.github.openfeign</groupId>
+			<artifactId>feign-jackson</artifactId>
+			<version>9.7.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>1.2.39</version>
+		</dependency>
+
+
+
 		<!-- AOP -->
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -111,7 +137,7 @@
 			<artifactId>aopalliance</artifactId>
 			<version>1.0</version>
 		</dependency>
-		
+
 		<!-- Log -->
 		<dependency>
 			<groupId>org.slf4j</groupId>
@@ -145,13 +171,13 @@
 			<artifactId>disruptor</artifactId>
 			<version>${disruptor.version}</version>
 		</dependency>
-		
+
 		<!-- utils -->
 		<!-- protobuf -->
 		<dependency>
-		    <groupId>com.google.protobuf</groupId>
-		    <artifactId>protobuf-java</artifactId>
-		    <version>3.6.1</version>
+			<groupId>com.google.protobuf</groupId>
+			<artifactId>protobuf-java</artifactId>
+			<version>3.6.1</version>
 		</dependency>
 
 		<dependency>

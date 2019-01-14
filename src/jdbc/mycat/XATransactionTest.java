@@ -22,8 +22,8 @@ public class XATransactionTest {
 	 * @Date 2018年4月23日
 	 */
 	public static void main(String[] args) {
-		String url1 = "jdbc:mysql://127.0.0.1:3306/test?user=root&password=root&useUnicode=true&characterEncoding=utf8&useSSL=false";
-		String url2 = "jdbc:mysql://3086.mzhen.cn:3306/test?user=root&password=MZtest2018!&useUnicode=true&characterEncoding=utf8&useSSL=false";
+		String url1 = "jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=utf8&useSSL=false";
+		String url2 = "jdbc:mysql://127.0.0.1:3307/test?useUnicode=true&characterEncoding=utf8&useSSL=false";
 
 		Connection conn1 = null, conn2 = null;
 		Statement stmt1 = null, stmt2 = null;
