@@ -15,8 +15,6 @@ import net.sf.json.JSONObject;
 /**
  * @Title Bean
  * @Description
- * @Author lvzhaoyang
- * @Date 2018年4月27日
  */
 public class Bean {
 

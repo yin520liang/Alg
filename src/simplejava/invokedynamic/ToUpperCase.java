@@ -12,8 +12,6 @@ import java.lang.invoke.MethodType;
 /**
  * @title
  * @description
- * @author lvzhaoyang
- * @date 2017年9月19日下午2:34:56
  */
 public class ToUpperCase {
 	public static CallSite bootstrap(Lookup lookup, String name, MethodType type, String value) throws Exception {

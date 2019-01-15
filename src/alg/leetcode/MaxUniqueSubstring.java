@@ -11,8 +11,6 @@ package alg.leetcode;
  * 解释: 因为无重复字符的最长子串是 "abc"，所以其长度为 3。 <br>
  * 
  * @title MaxUniqueSubstring
- * @author lvzhaoyang
- * @date 2018年12月27日
  */
 public class MaxUniqueSubstring {
 

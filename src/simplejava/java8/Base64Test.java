@@ -9,8 +9,6 @@ import java.util.Base64;
 /**
  * @title
  * @description
- * @author lvzhaoyang
- * @date 2017年9月15日下午2:14:32
  */
 public class Base64Test {
 	public static void main(String[] args) {

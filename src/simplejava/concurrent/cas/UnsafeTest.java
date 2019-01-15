@@ -10,16 +10,9 @@ import sun.misc.Unsafe;
 /**
  * @Title UnsafeTest
  * @Description
- * @Author lvzhaoyang
- * @Date 2018年4月25日
  */
 public class UnsafeTest {
 
-	/**
-	 * @Description
-	 * @Author lvzhaoyang
-	 * @Date 2018年4月25日
-	 */
 	public static void main(String[] args) {
 		Unsafe us = getUnsafe();
 //		testArray(us);

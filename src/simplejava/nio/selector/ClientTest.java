@@ -14,8 +14,6 @@ import java.nio.channels.WritableByteChannel;
 
 /**
  * @title ClientTest
- * @author lvzhaoyang
- * @date 2018年11月13日
  */
 public class ClientTest {
 	
@@ -23,12 +21,6 @@ public class ClientTest {
 	
 	private ByteBuffer receive = ByteBuffer.allocate(1024);
 
-	/**
-	 * @author lvzhaoyang
-	 * @throws IOException 
-	 * @throws InterruptedException 
-	 * @date 2018年11月13日 
-	 */
 	public static void main(String[] args) throws Exception {
 		ClientTest test = new ClientTest();
 		test.run();

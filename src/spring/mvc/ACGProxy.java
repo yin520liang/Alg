@@ -13,8 +13,6 @@ import net.sf.cglib.proxy.MethodProxy;
 /**
  * @Title ACGProxy
  * @Description
- * @Author lvzhaoyang
- * @Date 2018年5月3日
  */
 public class ACGProxy implements MethodInterceptor {
 

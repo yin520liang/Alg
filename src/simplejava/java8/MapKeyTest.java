@@ -9,18 +9,10 @@ import java.util.Map;
 /**
  * @title
  * @description
- * @author lvzhaoyang
- * @date 2017年11月27日上午10:26:02
  *
  */
 public class MapKeyTest {
 
-	/**
-	 * @author lvzhaoyang
-	 * @date 2017年11月27日上午10:26:02
-	 *
-	 * @param args
-	 */
 	public static void main(String[] args) {
 		Map<MyObj, Integer> map = new HashMap<>();
 		

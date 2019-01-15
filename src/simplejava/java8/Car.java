@@ -9,9 +9,6 @@ import java.util.function.Supplier;
 
 /**
  * @title
- * @description
- * @author lvzhaoyang
- * @date 2017年9月13日下午5:54:43
  */
 public class Car {
 	public static Car create(final Supplier<Car> supplier) {

@@ -11,8 +11,6 @@ package alg.leetcode;
  * 注意: "aba" 也是一个有效答案。
  * 
  * @title MaxPalindrome
- * @author lvzhaoyang
- * @date 2018年12月27日
  */
 public class LongestPalindrome {
 	

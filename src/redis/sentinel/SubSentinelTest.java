@@ -17,8 +17,6 @@ import redis.clients.jedis.exceptions.JedisException;
  * 连接到master节点，获取sentinel列表
  * 
  * @title SubSentinelTest
- * @author lvzhaoyang
- * @date 2018年12月13日
  */
 public class SubSentinelTest {
 

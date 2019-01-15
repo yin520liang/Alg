@@ -10,8 +10,6 @@ import java.nio.channels.SocketChannel;
 
 /**
  * @title ReadEventHandler
- * @author lvzhaoyang
- * @date 2018年11月23日
  */
 public class ReadEventHandler implements EventHandler {
 	

@@ -10,8 +10,6 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * @title SocketChannel
- * @author lvzhaoyang
- * @date 2018年11月2日
  */
 public class SocketChannelTest {
 	

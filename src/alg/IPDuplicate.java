@@ -7,8 +7,6 @@ import java.util.Scanner;
 
 /**
  * 查找重复ip
- * @author lvzhaoyang
- * @date 2018年10月25日
  */
 public class IPDuplicate {
 	

@@ -15,8 +15,6 @@ import redis.clients.jedis.JedisShardInfo;
  *              <p>
  *              <a
  *              href="http://www.runoob.com/redis/redis-lists.html">list相关操作</a>
- * @Author lvzhaoyang
- * @Date 2018年5月30日
  */
 public class RedisListMQTest {
 	

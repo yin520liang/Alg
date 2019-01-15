@@ -5,8 +5,6 @@ package simplejava.javap;
 
 /**
  * @title JavaPTest
- * @author lvzhaoyang
- * @date 2018年8月7日
  */
 public class JavaPTest {
 

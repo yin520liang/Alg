@@ -18,8 +18,6 @@ import org.xml.sax.InputSource;
 /**
  * @Title Trim
  * @Description
- * @Author lvzhaoyang
- * @Date 2018年1月25日
  */
 public class Trim {
 

@@ -6,8 +6,6 @@ package simplejava.java8;
 /**
  * @title
  * @description
- * @author lvzhaoyang
- * @date 2017年11月17日下午12:35:24
  *
  */
 public class ReverseString {

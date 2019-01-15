@@ -11,8 +11,6 @@ import redis.clients.jedis.JedisSentinelPool;
 
 /**
  * @title SentinelPoolTest
- * @author lvzhaoyang
- * @date 2018年12月13日
  */
 public class SentinelPoolTest {
 

@@ -14,18 +14,9 @@ import java.util.stream.Collectors;
 /**
  * @title
  * @description
- * @author lvzhaoyang
- * @date 2017年9月14日下午3:25:51
  */
 public class Stream {
 
-	/**
-	 * @Description
-	 * @Author lvzhaoyang
-	 * @CreatetionDate 2017年9月14日下午3:25:51
-	 *
-	 * @Return
-	 */
 	public static void main(String[] args) {
 		// 示例1
 		List<Circle> circles = new ArrayList<>(Arrays.asList(CircleFactory.create(Circle::new),

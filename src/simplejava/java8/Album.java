@@ -13,8 +13,6 @@ import java.util.stream.Collectors;
 /**
  * @title
  * @description
- * @author lvzhaoyang
- * @date 2017年9月15日上午10:19:53
  */
 public class Album {
 	private String name;

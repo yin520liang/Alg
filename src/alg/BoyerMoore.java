@@ -6,8 +6,6 @@ package alg;
 /**
  * @title
  * @description Boyer-Moore字符串查找算法
- * @author lvzhaoyang
- * @date 2017年12月13日下午3:24:36
  *
  */
 public class BoyerMoore {

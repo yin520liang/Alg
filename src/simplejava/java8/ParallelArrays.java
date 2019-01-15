@@ -9,8 +9,6 @@ import java.util.concurrent.ThreadLocalRandom;
 /**
  * @title
  * @description
- * @author lvzhaoyang
- * @date 2017年9月15日上午11:03:04
  */
 public class ParallelArrays {
 	

@@ -11,8 +11,6 @@ import org.apache.commons.io.FileUtils;
 /**
  * @title Boyer-Moore-Horspool算法
  * @description 对Boyer-Moore算法进行简化
- * @author lvzhaoyang
- * @date 2017年12月13日下午4:46:23
  *
  */
 public class Horspool {

@@ -19,8 +19,6 @@ import java.util.Iterator;
 
 /**
  * @title SelectorTest
- * @author lvzhaoyang
- * @date 2018年11月13日
  */
 public class SelectorTest {
 	

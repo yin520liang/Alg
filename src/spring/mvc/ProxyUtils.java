@@ -12,8 +12,6 @@ import org.springframework.aop.support.AopUtils;
 /**
  * 在spring环境下，获取被代理对象
  * @title ProxyUtils
- * @author lvzhaoyang
- * @date 2018年12月12日
  */
 public class ProxyUtils {
 	

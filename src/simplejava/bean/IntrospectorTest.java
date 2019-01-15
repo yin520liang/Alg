@@ -16,8 +16,6 @@ import java.util.Map;
 
 /**
  * @title IntrospectorTest
- * @author lvzhaoyang
- * @date 2018年8月14日
  */
 public class IntrospectorTest {
 

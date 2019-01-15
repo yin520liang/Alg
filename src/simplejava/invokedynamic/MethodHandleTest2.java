@@ -11,8 +11,6 @@ import java.lang.invoke.MethodType;
 /**
  * @title
  * @description
- * @author lvzhaoyang
- * @date 2017年9月19日上午11:00:36
  */
 public class MethodHandleTest2 {
 	public void doSomething() {
@@ -28,13 +26,7 @@ public class MethodHandleTest2 {
 		new Thread(runnable).start();
 	}
 
-	/**
-	 * @Description
-	 * @Author lvzhaoyang
-	 * @CreatetionDate 2017年9月19日上午11:00:36
-	 *
-	 * @Return
-	 */
+
 	public static void main(String[] args) {
 		MethodHandleTest2 mht = new MethodHandleTest2();
 		try {

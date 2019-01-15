@@ -10,19 +10,11 @@ import java.util.List;
 
 /**
  * @title ParameterTypeTest
- * @author lvzhaoyang
- * @date 2018年8月6日
  */
 public class ParameterTypeTest {
 
 	private List<String> testList = new ArrayList<>(1);
 
-	/**
-	 * @author lvzhaoyang
-	 * @throws SecurityException 
-	 * @throws NoSuchFieldException 
-	 * @date 2018年8月6日
-	 */
 	public static void main(String[] args) throws NoSuchFieldException, SecurityException {
 //		Field[] fields = ParameterTypeTest.class.getDeclaredFields();
 //		for(Field f : fields) {

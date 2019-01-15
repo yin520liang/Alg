@@ -16,8 +16,6 @@ import java.util.List;
 
 /**
  * @title DatagramChannelTest
- * @author lvzhaoyang
- * @date 2018年11月5日
  * 
  */
 public class DatagramChannelTest {

@@ -13,8 +13,6 @@ import java.time.Month;
 /**
  * @title
  * @description
- * @author lvzhaoyang
- * @date 2017年9月15日上午11:18:25
  */
 public class DateTime {
 	public static void main(String[] args) {

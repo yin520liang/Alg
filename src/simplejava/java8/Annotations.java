@@ -13,8 +13,6 @@ import java.util.Collection;
 /**
  * @title
  * @description
- * @author lvzhaoyang
- * @date 2017年9月13日下午5:29:34
  */
 public class Annotations {
 	@Retention(RetentionPolicy.RUNTIME)

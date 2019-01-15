@@ -6,16 +6,9 @@ package simplejava;
 /**
  * @Title WhereIsMainTest
  * @Description 
- * @Author lvzhaoyang
- * @Date 2018年5月9日
  */
 public class WhereIsMainTest {
 
-	/**
-	 * @Description 
-	 * @Author lvzhaoyang
-	 * @Date 2018年5月9日 
-	 */
 	public static void main(String[] args) {
 		String a = null;
 		StackTraceElement[] stackTrace = new RuntimeException().getStackTrace();

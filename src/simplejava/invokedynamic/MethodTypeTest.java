@@ -8,8 +8,6 @@ import java.lang.invoke.MethodType;
 /**
  * @title
  * @description 
- * @author lvzhaoyang
- * @date 2017年9月18日下午5:22:12
  */
 public class MethodTypeTest {
 

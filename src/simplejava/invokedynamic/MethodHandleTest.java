@@ -10,8 +10,6 @@ import java.lang.invoke.MethodType;
 /**
  * @title
  * @description
- * @author lvzhaoyang
- * @date 2017年9月18日下午5:34:35
  */
 public class MethodHandleTest {
 
@@ -84,13 +82,7 @@ public class MethodHandleTest {
 		lookup.findStaticSetter(Sample.class, "value", int.class);
 	}
 
-	/**
-	 * @Description
-	 * @Author lvzhaoyang
-	 * @CreatetionDate 2017年9月18日下午5:34:35
-	 *
-	 * @Return
-	 */
+
 	public static void main(String[] args) {
 		MethodHandleTest test = new MethodHandleTest();
 		try {

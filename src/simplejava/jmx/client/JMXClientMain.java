@@ -23,8 +23,6 @@ import simplejava.jmx.HelloMBean;
 
 /**
  * @title JMXClientMain
- * @author lvzhaoyang
- * @date 2018年7月26日
  */
 public class JMXClientMain {
 

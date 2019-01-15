@@ -8,28 +8,28 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.Properties;
 
 import com.mysql.jdbc.jdbc2.optional.MysqlDataSource;
 
-import jdbc.PropertiesReader;
+import jdbc.DBConfigReader;
 
 /**
  * @Title ReadWriteSeperation
- * @Description test mycat's read/write seperation
+ * test mycat's read/write seperation
  */
 public class ReadWriteSeperation {
 	private static String user;
 	private static String password;
 	private static String address;
 	private static String db;
+	private static String instance = "local";
 	
 	public static void main(String[] args) {
-		Properties prop = PropertiesReader.load("resources/config/db.config");
-		user = prop.getProperty("db.local.user");
-		password = prop.getProperty("db.local.password");
-		address = prop.getProperty("db.local.url");
-		db = prop.getProperty("db.local.name");
+		DBConfigReader prop = DBConfigReader.load();
+		user = prop.getUser(instance);
+		password = prop.getPassword(instance);
+		address = prop.getUrl(instance);
+		db = prop.getDb(instance);
 		
 		MysqlDataSource dataSource = new MysqlDataSource();
 		String url = String.format(

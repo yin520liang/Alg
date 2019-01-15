@@ -16,8 +16,6 @@ import net.sf.cglib.reflect.FastConstructor;
 /**
  * @Title CGLibTest
  * @Description
- * @Author lvzhaoyang
- * @Date 2018年2月28日
  */
 public class CGLibTest {
 

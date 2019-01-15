@@ -8,8 +8,6 @@ package alg;
  * @description 找零钱
  *              <p>
  *              给定数组指定的零钱，计算对现金n有多少种找零方式
- * @author lvzhaoyang
- * @date 2017年9月20日下午3:44:07
  */
 public class MakeChange {
 

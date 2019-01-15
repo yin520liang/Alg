@@ -10,8 +10,6 @@ import java.lang.reflect.Proxy;
 /**
  * @Title AProxy
  * @Description
- * @Author lvzhaoyang
- * @Date 2018年5月3日
  */
 public class AProxy implements InvocationHandler {
 

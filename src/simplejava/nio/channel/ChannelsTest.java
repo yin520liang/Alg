@@ -5,8 +5,6 @@ package simplejava.nio.channel;
 
 /**
  * @title ChannelsTest
- * @author lvzhaoyang
- * @date 2018年11月5日
  */
 public class ChannelsTest {
 

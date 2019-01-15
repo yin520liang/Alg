@@ -9,8 +9,6 @@ package alg.leetcode;
  * 输入: 121
  * 输出: true
  * @title PalindromeInt
- * @author lvzhaoyang
- * @date 2018年12月28日
  */
 public class PalindromeInt {
 	

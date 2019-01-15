@@ -16,8 +16,6 @@ import simplejava.invokedynamic.MethodHandleTest;
 /**
  * @title
  * @description
- * @author lvzhaoyang
- * @date 2017年9月14日上午10:27:26
  */
 public class Lambda {
 

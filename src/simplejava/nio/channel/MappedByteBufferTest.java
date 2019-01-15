@@ -16,18 +16,12 @@ import java.nio.channels.FileChannel.MapMode;
 
 /**
  * @title MappedByteBufferTest
- * @author lvzhaoyang
- * @date 2018年10月30日
  */
 public class MappedByteBufferTest {
 
 //	private static ReferenceQueue<MappedByteBuffer> refQueue = new ReferenceQueue<>();
 
-	/**
-	 * @author lvzhaoyang
-	 * @throws IOException
-	 * @date 2018年10月30日
-	 */
+
 	public static void main(String[] args) {
 //		writeTest();
 		combineTogether("wiki-horespool.txt");

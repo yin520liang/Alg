@@ -15,8 +15,6 @@ import org.springframework.util.Assert;
 	E   D   H   N
 	
  * @title ZString
- * @author lvzhaoyang
- * @date 2018年12月27日
  */
 public class ZString {
 	

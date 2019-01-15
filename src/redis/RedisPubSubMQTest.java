@@ -14,8 +14,6 @@ import redis.clients.jedis.JedisShardInfo;
 /**
  * @Title RedisPubSubMQTest
  * @Description 由专门的线程作为poller，订阅特定频道的消息，在收到消息后去特定队列（此处为list，若强调有序性可以用zset）取出消息，交给woker线程池中的某个线程处理
- * @Author lvzhaoyang
- * @Date 2018年5月30日
  */
 public class RedisPubSubMQTest{
 

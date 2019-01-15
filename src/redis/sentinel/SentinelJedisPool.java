@@ -15,8 +15,6 @@ import redis.clients.jedis.JedisPubSub;
 
 /**
  * @title SentinelJedisPool
- * @author lvzhaoyang
- * @date 2018年12月14日
  */
 public class SentinelJedisPool {
 	

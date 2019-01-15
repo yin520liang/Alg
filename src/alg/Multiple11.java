@@ -10,8 +10,6 @@ import java.util.List;
 /**
  * @title
  * @description 计算11^N结果中有多少个‘1’
- * @author lvzhaoyang
- * @date 2017年10月12日下午1:39:06
  */
 public class Multiple11 {
 

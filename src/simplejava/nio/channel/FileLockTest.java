@@ -13,8 +13,6 @@ import java.util.Random;
 
 /**
  * @title FileLockTest
- * @author lvzhaoyang
- * @date 2018年10月26日
  */
 public class FileLockTest {
 	
@@ -37,11 +35,7 @@ public class FileLockTest {
 	
 	private static int idxval = 1;
 
-	/**
-	 * @author lvzhaoyang
-	 * @throws IOException 
-	 * @date 2018年10月26日 
-	 */
+
 	public static void main(String[] args) throws IOException {
 		RandomAccessFile f = null;
 		FileChannel fc = null;

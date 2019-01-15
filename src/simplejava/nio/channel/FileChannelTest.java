@@ -17,8 +17,6 @@ import java.nio.charset.CharsetDecoder;
 
 /**
  * @title FileChannelTest
- * @author lvzhaoyang
- * @date 2018年10月25日
  */
 public class FileChannelTest {
 

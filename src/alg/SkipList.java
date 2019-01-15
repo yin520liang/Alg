@@ -7,8 +7,6 @@ package alg;
  * 仿照redis的跳表实现：没有增加backward指针和span
  * 
  * @title SkipList
- * @author lvzhaoyang
- * @date 2018年10月30日
  */
 public class SkipList {
 

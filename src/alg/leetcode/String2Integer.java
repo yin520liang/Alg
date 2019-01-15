@@ -12,8 +12,6 @@ package alg.leetcode;
  * 在任何情况下，若函数不能进行有效的转换时，请返回 0。
  * 
  * @title String2Integer
- * @author lvzhaoyang
- * @date 2018年12月28日
  */
 public class String2Integer {
 	

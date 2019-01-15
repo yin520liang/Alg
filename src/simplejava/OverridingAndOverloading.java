@@ -6,8 +6,6 @@ package simplejava;
 /**
  * @title
  * @description
- * @author lvzhaoyang
- * @date 2017年9月29日上午10:50:36
  */
 public class OverridingAndOverloading {
 	public static void main(String[] args) {

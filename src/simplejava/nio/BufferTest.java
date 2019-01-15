@@ -11,8 +11,6 @@ import java.nio.CharBuffer;
 /**
  * @Title BufferTest
  * @Description 
- * @Author lvzhaoyang
- * @Date 2018年3月9日
  */
 public class BufferTest {
 

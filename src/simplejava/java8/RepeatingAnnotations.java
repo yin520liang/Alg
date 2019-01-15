@@ -12,8 +12,6 @@ import java.lang.annotation.Target;
 /**
  * @title
  * @description
- * @author lvzhaoyang
- * @date 2017年9月13日下午5:33:43
  */
 public class RepeatingAnnotations {
 	@Target(ElementType.TYPE)

@@ -9,8 +9,6 @@ import java.lang.invoke.MethodType;
 /**
  * @title
  * @description
- * @author lvzhaoyang
- * @date 2017年9月19日上午11:42:06
  */
 public class MethodHandleMap {
 	private static final MethodType typeCallback = 

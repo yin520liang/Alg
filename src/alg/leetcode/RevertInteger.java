@@ -9,8 +9,6 @@ package alg.leetcode;
  * 
  * 重点在于溢出检查
  * @title RevertInteger
- * @author lvzhaoyang
- * @date 2018年12月27日
  */
 public class RevertInteger {
 	

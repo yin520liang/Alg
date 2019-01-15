@@ -8,9 +8,7 @@ import java.sql.Connection;
 import java.sql.Driver;
 import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.util.Properties;
 
-import org.apache.logging.log4j.util.PropertiesUtil;
 import org.springframework.jdbc.datasource.SimpleDriverDataSource;
 
 import com.mysql.jdbc.jdbc2.optional.MysqlDataSource;
@@ -21,6 +19,7 @@ import com.mysql.jdbc.jdbc2.optional.MysqlDataSource;
  * <p>Two ways to get a connection to a database:
  * 	<li>1. DriverManager
  *  <li>2. DataSource 
+ *  <li>3. Spring Managed
  */
 public class JdbcTest {
 	
@@ -28,14 +27,15 @@ public class JdbcTest {
 	private static String password;
 	private static String address;
 	private static String db;
+	
+	private static String instance = "local";
 
 	public static void main(String[] args) {
-		Properties prop = PropertiesReader.load("resources/config/db.config");
-		user = prop.getProperty("db.local.user");
-		password = prop.getProperty("db.local.password");
-		address = prop.getProperty("db.local.url");
-		db = prop.getProperty("db.local.name");
-		connectByDataSource();
+		DBConfigReader prop = DBConfigReader.load();
+		user = prop.getUser(instance);
+		password = prop.getPassword(instance);
+		address = prop.getUrl(instance);
+		db = prop.getDb(instance);
 	}
 
 	private static void connectByDriverManager() {

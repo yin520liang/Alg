@@ -6,8 +6,6 @@ package alg;
 /**
  * @title
  * @description 线段树
- * @author lvzhaoyang
- * @date 2017年8月4日上午11:26:36
  */
 public class LineTree {
 
@@ -130,13 +128,8 @@ public class LineTree {
 		return true;
 	}
 
-	/**
-	 * 
-	 * @title
-	 * @description
-	 * @author lvzhaoyang
-	 * @date 2017年8月4日下午2:43:53
-	 */
+	
+	
 	private class LineTreeNode {
 		int x;
 		int startIndex;

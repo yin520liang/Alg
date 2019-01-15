@@ -8,8 +8,6 @@ import java.util.concurrent.locks.StampedLock;
 /**
  * @title
  * @description
- * @author lvzhaoyang
- * @date 2017年9月20日下午2:47:18
  */
 public class MyPoint {
 	private double x, y;

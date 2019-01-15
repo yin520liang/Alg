@@ -7,35 +7,28 @@ import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.Properties;
 
 import com.mysql.jdbc.jdbc2.optional.MysqlDataSource;
 
-import jdbc.PropertiesReader;
+import jdbc.DBConfigReader;
 
 /**
  * @Title MySQLRouterTest
- * @Description
- * @Author lvzhaoyang
- * @Date 2018年4月24日
  */
 public class MySQLRouterTest {
 	private static String user;
 	private static String password;
 	private static String address;
 	private static String db;
+	
+	private static String instance = "local";
 
-	/**
-	 * @Description
-	 * @Author lvzhaoyang
-	 * @Date 2018年4月24日
-	 */
 	public static void main(String[] args) {
-		Properties prop = PropertiesReader.load("resources/config/db.config");
-		user = prop.getProperty("db.local.user");
-		password = prop.getProperty("db.local.password");
-		address = prop.getProperty("db.local.url");
-		db = prop.getProperty("db.local.name");
+		DBConfigReader prop = DBConfigReader.load();
+		user = prop.getUser(instance);
+		password = prop.getPassword(instance);
+		address = prop.getUrl(instance);
+		db = prop.getDb(instance);
 
 		String writeUrl = String.format(
 				"jdbc:mysql://%s/%s?user=%s&password=%s&useUnicode=true&characterEncoding=utf8&useSSL=false", address,

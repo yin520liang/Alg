@@ -17,8 +17,6 @@ import jdk.internal.org.objectweb.asm.MethodVisitor;
 /**
  * @title
  * @description
- * @author lvzhaoyang
- * @date 2017年9月19日下午2:33:04
  */
 public class ToUpperCaseMain {
 //	private static final MethodHandle BSM = new MethodHandle(MH_INVOKESTATIC,

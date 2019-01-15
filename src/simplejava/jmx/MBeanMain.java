@@ -14,8 +14,6 @@ import javax.management.remote.JMXServiceURL;
 
 /**
  * @title MBeanMain
- * @author lvzhaoyang
- * @date 2018年7月25日
  */
 public class MBeanMain {
 	

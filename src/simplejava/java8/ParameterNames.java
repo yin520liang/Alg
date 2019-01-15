@@ -9,8 +9,6 @@ import java.lang.reflect.Parameter;
 /**
  * @title
  * @description
- * @author lvzhaoyang
- * @date 2017年9月15日上午11:42:23
  */
 public class ParameterNames {
 	

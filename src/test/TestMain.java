@@ -10,8 +10,6 @@ import java.util.concurrent.locks.ReentrantLock;
 /**
  * @title
  * @description
- * @author lvzhaoyang
- * @date 2017年12月21日上午9:31:50
  *
  */
 public class TestMain {

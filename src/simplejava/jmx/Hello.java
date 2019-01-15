@@ -8,8 +8,6 @@ import javax.management.NotificationListener;
 
 /**
  * @title Hello
- * @author lvzhaoyang
- * @date 2018年7月25日
  */
 public class Hello implements HelloMBean {
 	

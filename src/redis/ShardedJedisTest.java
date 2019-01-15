@@ -12,16 +12,10 @@ import redis.clients.jedis.ShardedJedis;
 /**
  * 客户端sharding redis实现：ShardedJedis
  * @Title ShardedJedisTest
- * @Author lvzhaoyang
- * @Date 2018年3月22日
  */
 public class ShardedJedisTest {
 
-	/**
-	 * @Description 
-	 * @Author lvzhaoyang
-	 * @Date 2018年3月22日 
-	 */
+
 	public static void main(String[] args) {
 		// shard info
 		JedisShardInfo shard0 = new JedisShardInfo("127.0.0.1", 6379);

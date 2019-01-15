@@ -15,18 +15,9 @@ import sun.reflect.ReflectionFactory;
 /**
  * @Title ObjenesisTest
  * @Description 
- * @Author lvzhaoyang
- * @Date 2018年2月28日
  */
 public class ObjenesisTest {
 
-	/**
-	 * @throws SecurityException 
-	 * @throws NoSuchMethodException 
-	 * @Description 
-	 * @Author lvzhaoyang
-	 * @Date 2018年2月28日 
-	 */
 	public static void main(String[] args) throws Exception {
 //		Objenesis objenesis = new ObjenesisStd(true); // or ObjenesisSerializer
 //		ObjectInstantiator instantiator = objenesis.getInstantiatorOf(Person.class);

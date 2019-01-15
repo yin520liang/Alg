@@ -12,17 +12,9 @@ import java.util.Enumeration;
 /**
  * @Title ClassPathResourceLoadTest
  * @Description 
- * @Author lvzhaoyang
- * @Date 2018年5月9日
  */
 public class ClassPathResourceLoadTest {
 
-	/**
-	 * @throws IOException 
-	 * @Description 
-	 * @Author lvzhaoyang
-	 * @Date 2018年5月9日 
-	 */
 	public static void main(String[] args) throws IOException {
 		ClassLoader cl = ClassPathResourceLoadTest.class.getClassLoader();
 		String path = "simplejava/concurrent";

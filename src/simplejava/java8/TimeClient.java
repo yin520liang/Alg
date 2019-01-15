@@ -11,8 +11,6 @@ import java.time.ZonedDateTime;
 /**
  * @title
  * @description
- * @author lvzhaoyang
- * @date 2017年9月13日下午5:01:27
  */
 public interface TimeClient {
 

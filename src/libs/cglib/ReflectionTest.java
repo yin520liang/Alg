@@ -10,16 +10,10 @@ import java.lang.reflect.Proxy;
 /**
  * @Title ReflectionTest
  * @Description 
- * @Author lvzhaoyang
- * @Date 2018年5月8日
  */
 public class ReflectionTest {
 
-	/**
-	 * @Description 
-	 * @Author lvzhaoyang
-	 * @Date 2018年5月8日 
-	 */
+
 	public static void main(String[] args) {
 		IA a = (IA) Proxy.newProxyInstance(IA.class.getClassLoader(), new Class[]{IA.class}, new InvocationHandler(){
 			@Override

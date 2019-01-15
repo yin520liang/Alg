@@ -10,8 +10,6 @@ import java.util.Map;
  * 给定一个整数数组和整数N，返回加和为N的两个整数在数组中的下标.
  * 假定：数组中没有重复元素
  * @title FindIndexTwoNumberSum
- * @author lvzhaoyang
- * @date 2018年12月26日
  */
 public class FindIndexTwoNumberSum {
 

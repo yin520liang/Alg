@@ -12,8 +12,6 @@ import java.lang.invoke.MutableCallSite;
 /**
  * @title
  * @description
- * @author lvzhaoyang
- * @date 2017年9月19日下午2:21:40
  */
 public class CallSiteTest {
 	
@@ -42,13 +40,7 @@ public class CallSiteTest {
 		System.out.println(result);
 	}
 
-	/**
-	 * @Description
-	 * @Author lvzhaoyang
-	 * @CreatetionDate 2017年9月19日下午2:21:40
-	 *
-	 * @Return
-	 */
+
 	public static void main(String[] args) {
 		CallSiteTest cst = new CallSiteTest();
 		try {

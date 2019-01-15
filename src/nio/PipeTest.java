@@ -17,13 +17,6 @@ public class PipeTest {
 
 	private static final int DEF_BUFF_SIZE = 100; // bytes
 
-	/**
-	 * @throws IOException
-	 * @throws InterruptedException 
-	 * @Description
-	 * @Author lvzhaoyang
-	 * @Date 2018年6月12日
-	 */
 	public static void main(String[] args) throws IOException, InterruptedException {
 		PipeTest test = new PipeTest();
 		Pipe pipe = Pipe.open();

@@ -11,8 +11,6 @@ import java.util.stream.Collectors;
 /**
  * @title
  * @description
- * @author lvzhaoyang
- * @date 2017年9月18日上午11:30:43
  */
 public class IndyTest {
 	public static void main(String[] args) {

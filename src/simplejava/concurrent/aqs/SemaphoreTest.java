@@ -10,8 +10,6 @@ import java.util.concurrent.Semaphore;
 /**
  * @Title SemaphoreTest
  * @Description
- * @Author lvzhaoyang
- * @Date 2018年4月26日
  */
 public class SemaphoreTest {
 

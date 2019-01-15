@@ -7,11 +7,10 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.Properties;
 
 import com.mysql.jdbc.jdbc2.optional.MysqlDataSource;
 
-import jdbc.PropertiesReader;
+import jdbc.DBConfigReader;
 
 /**
  * @Title WriteFragment
@@ -26,13 +25,14 @@ public class WriteFragment {
 	private static int ID_INC = 0;
 	
 	private static Connection conn = null;
+	private static String instance = "local";
 	
 	public static void main(String[] args) {
-		Properties prop = PropertiesReader.load("resources/config/db.config");
-		user = prop.getProperty("db.local.user");
-		password = prop.getProperty("db.local.password");
-		address = prop.getProperty("db.local.url");
-		db = prop.getProperty("db.local.name");
+		DBConfigReader prop = DBConfigReader.load();
+		user = prop.getUser(instance);
+		password = prop.getPassword(instance);
+		address = prop.getUrl(instance);
+		db = prop.getDb(instance);
 		
 		MysqlDataSource dataSource = new MysqlDataSource();
 		String url = String.format(

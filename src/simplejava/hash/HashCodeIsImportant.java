@@ -7,8 +7,6 @@ import java.util.HashMap;
 
 /**
  * @title HashCodeIsImportant
- * @author lvzhaoyang
- * @date 2018年8月24日
  */
 public class HashCodeIsImportant {
 	

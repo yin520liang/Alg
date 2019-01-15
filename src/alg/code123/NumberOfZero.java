@@ -5,7 +5,6 @@ package alg.code123;
 
 /**
  * @title NumberOfZero
- * @author lvzhaoyang
  * @date 2018年8月27日
  */
 public class NumberOfZero {

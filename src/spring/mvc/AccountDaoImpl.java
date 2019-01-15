@@ -8,8 +8,6 @@ import org.springframework.stereotype.Repository;
 /**
  * @Title AccountDaoImpl
  * @Description 
- * @Author lvzhaoyang
- * @Date 2018年5月3日
  */
 @Repository
 public class AccountDaoImpl implements AccountDao{

@@ -8,8 +8,6 @@ import java.util.Arrays;
 /**
  * @title
  * @description 树状数组
- * @author lvzhaoyang
- * @date 2017年8月4日下午4:14:28
  */
 public class TreeArray {
 

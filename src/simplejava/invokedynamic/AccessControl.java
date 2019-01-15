@@ -10,8 +10,6 @@ import java.lang.invoke.MethodType;
 /**
  * @title
  * @description
- * @author lvzhaoyang
- * @date 2017年9月19日上午11:14:24
  */
 public class AccessControl {
 	private void privateMethod() {

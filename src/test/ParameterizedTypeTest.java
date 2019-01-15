@@ -9,16 +9,9 @@ import java.lang.reflect.Type;
 /**
  * @Title ParameterizedTypeTest
  * @Description 泛型示例
- * @Author lvzhaoyang
- * @Date 2018年1月10日
  */
 public class ParameterizedTypeTest {
 
-	/**
-	 * @Description
-	 * @Author lvzhaoyang
-	 * @Date 2018年1月10日
-	 */
 	public static void main(String[] args) {
 		FooChild fc = new FooChild();
 		Type[] pts = getParameterizedTypes(fc);

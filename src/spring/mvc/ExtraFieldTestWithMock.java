@@ -30,8 +30,6 @@ package spring.mvc;
 // * Mock + SpringTest 结合示例 <p>
 // * 此示例中以service为主要测试对象，因此需要对service依赖的dao层对象进行mock（若dao层对象也依赖了其他对象则需要递归置换）
 // * @title ExtraFieldDaoTest
-// * @author lvzhaoyang
-// * @date 2018年12月11日
 // */
 //@WebAppConfiguration
 //@RunWith(SpringJUnit4ClassRunner.class)

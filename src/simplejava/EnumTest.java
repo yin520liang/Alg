@@ -8,8 +8,6 @@ import java.util.Arrays;
 /**
  * @Title EnumTest
  * @Description
- * @Author lvzhaoyang
- * @Date 2018年4月13日
  */
 public class EnumTest {
 

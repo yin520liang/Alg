@@ -12,8 +12,6 @@ import java.util.Random;
 
 /**
  * @title ScatterGatherTest
- * @author lvzhaoyang
- * @date 2018年10月25日
  */
 public class ScatterGatherTest {
 

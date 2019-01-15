@@ -10,8 +10,6 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * @title PhantomReferenceTest
- * @author lvzhaoyang
- * @date 2018年10月31日
  */
 public class PhantomReferenceTest {
 	

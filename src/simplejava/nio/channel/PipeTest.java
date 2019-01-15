@@ -13,8 +13,6 @@ import java.util.Random;
 
 /**
  * @title PipeTest
- * @author lvzhaoyang
- * @date 2018年11月5日
  */
 public class PipeTest {
 	
