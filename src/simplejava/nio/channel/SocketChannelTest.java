@@ -19,7 +19,7 @@ public class SocketChannelTest {
 
 	
 	private static void connectTest() throws IOException, InterruptedException {
-		InetSocketAddress addr = new InetSocketAddress ("3578.mzhen.cn", 3306);
+		InetSocketAddress addr = new InetSocketAddress ("localhost", 1111);
 		SocketChannel sc = SocketChannel.open();
 		sc.configureBlocking(false);
 		sc.connect(addr);

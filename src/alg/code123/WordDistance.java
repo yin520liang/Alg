@@ -8,7 +8,7 @@ import java.util.HashMap;
  * <p>
  * 思路：首先需要考虑几个问题：单词会重复出现；是否有顺序要求（即a和b的距离与b和a的距离不同）。实现时使用哈希表，一次建立后，每次查询复杂度都可以保证在O(1)。
  * 
- * @author MZCN501A0145
+ * @author 
  *
  */
 public class WordDistance {

@@ -29,40 +29,23 @@ import spring.cloud.AccessTokenApi.Token;
  */
 @Slf4j 
 public class FeignTestMain {
-	
-	private static String rooturl;
-	
-	private static String clientId;
-	
-	private static String clientSecret;
-	
-	private static String grantType;
 
 	public static void main(String[] args) {
-		initParameters();		
+		ConfigReader cfg = ConfigReader.load();
 		AccessTokenApi tokenClient = Feign.builder()
 										  .logger(new Slf4jLogger())
 										  .mapAndDecode((response, type) -> unwrapResponse(response, type), new JacksonDecoder())
-										  .target(AccessTokenApi.class, rooturl);
+										  .target(AccessTokenApi.class, cfg.getRootUrl());
 		// 2
 		Map<String, String> params = new HashMap<> (4);
-		params.put("client_id", clientId);
-		params.put("client_secret", clientSecret);
-		params.put("grant_type", grantType);
+		params.put("client_id", cfg.getClientId());
+		params.put("client_secret", cfg.getClientSecret());
+		params.put("grant_type", cfg.getGrantType());
 		Token token = tokenClient.token(params);
 
 		log.info("Applied token: {}", token);
 	}
 
-
-	private static void initParameters() {
-		ConfigReader cfg = ConfigReader.load();
-		rooturl = cfg.getRootUrl();
-		clientId = cfg.getClientId();
-		clientSecret = cfg.getClientSecret();
-		grantType = cfg.getGrantType();
-		
-	}
 
 
 	private static Response unwrapResponse(Response response, Type type) {

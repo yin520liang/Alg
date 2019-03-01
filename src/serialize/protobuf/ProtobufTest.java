@@ -12,7 +12,7 @@ import serialize.protobuf.Person.PersonProto;
  * <a href="https://developers.google.com/protocol-buffers/">developer guide</a>,
  * <a href="https://halfrost.com/protobuf_encode/">高效的数据压缩编码方式 Protobuf</a>
  * 
- * @author MZCN501A0145
+ * @author  
  *
  */
 public class ProtobufTest {

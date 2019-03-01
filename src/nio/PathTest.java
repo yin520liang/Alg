@@ -5,7 +5,7 @@ import java.nio.file.Paths;
 
 /**
  * Java NIO interface - Path (added in  Java 7)
- * @author MZCN501A0145
+ * @author  
  *
  */
 public class PathTest {

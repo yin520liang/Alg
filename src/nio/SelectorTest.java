@@ -7,7 +7,7 @@ import java.nio.channels.Selector;
 import java.nio.channels.ServerSocketChannel;
 /**
  * Java NIO selector
- * @author MZCN501A0145
+ * @author  
  *
  */
 public class SelectorTest {

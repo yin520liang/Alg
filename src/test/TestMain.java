@@ -4,6 +4,7 @@
 package test;
 
 import java.text.ParseException;
+import java.util.Scanner;
 import java.util.concurrent.locks.ReentrantLock;
 
 
@@ -15,11 +16,13 @@ import java.util.concurrent.locks.ReentrantLock;
 public class TestMain {
 
 	public static void main(String[] args) throws ParseException {
-
-		
-		B b = new B( );
-		System.out.println(b.toString());
-		b.printSuper();
+		Scanner scan = new Scanner(System.in);
+		int input = 0;
+		while(input != -1) {
+			input = scan.nextInt();
+			System.out.println("read in " + input);
+		}
+		scan.close();
 	}
 
 	

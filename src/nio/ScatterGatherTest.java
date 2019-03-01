@@ -9,7 +9,7 @@ import java.nio.channels.ScatteringByteChannel;
 /**
  * Java NIO API: scatter and gather
  * 
- * @author MZCN501A0145
+ * @author  
  *
  */
 public class ScatterGatherTest {

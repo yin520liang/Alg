@@ -24,7 +24,7 @@ public class ConfigReader {
 		ConfigReader reader = new ConfigReader();
 		reader.props = new Properties();
 		try {
-			reader.props.load(ConfigReader.class.getResourceAsStream(path));
+			reader.props.load(ConfigReader.class.getClassLoader().getResourceAsStream(path));
 		} catch (IOException e) {
 			
 		}
