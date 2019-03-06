@@ -31,14 +31,14 @@ public class BruteForce {
 		int m = ptn.length();
 		if(m > n) return -1;
 		int i, j = 0;
-		for(i = 0; i < n; ++ i) {
-			while(j < m && txt.charAt(i) == ptn.charAt(j)) ++ j;
-			if(j == m) return i - j + 1;
+		for(i = 0; i < n && j < m; ++ i) {
+			if(txt.charAt(i) == ptn.charAt(j)) ++ j;
 			else {
 				i -= j;
 				j = 0;
 			}
 		}
+		if(j == m) return i - j;
 		return -1;	
 	}
 

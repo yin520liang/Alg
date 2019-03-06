@@ -5,6 +5,7 @@ import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
 
+import alg.string.pattern.BoyerMoore;
 import alg.string.pattern.BruteForce;
 
 public class StringMain {
@@ -20,14 +21,25 @@ public class StringMain {
 //		Quick3String q3 = new Quick3String();
 //		q3.sort(s);
 //		System.out.println(Arrays.toString(s));
-		
+		/**
+		 * Pattern search
+		 */
 		String txt = FileUtils.readFileToString(new File("resources/scatter.txt"));
-		String patten = "web";
+		String pattern = "web";
+		// 1. search by kmp
 //		KMP kmp = new KMP();
-//		int pos = kmp.search(txt, patten);
+//		int pos = kmp.search(txt, pattern);
 //		System.out.println(pos);
+		
+		// 2. search by brute force
 		BruteForce bf = new BruteForce();
-		System.out.println(bf.search(txt, patten));
+		System.out.println(bf.search2(txt, pattern));
+		
+		// 3. search by boyerMoore
+//		BoyerMoore bm = new BoyerMoore(pattern);
+//		System.out.println(bm.search(txt));
+		
+		
 	}
 	
 }
