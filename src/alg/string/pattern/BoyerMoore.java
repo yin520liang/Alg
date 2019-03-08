@@ -7,7 +7,7 @@ import java.util.Arrays;
 
 /**
  * @title
- * @description Boyer-Moore字符串查找算法
+ * @description Boyer-Moore-Horspool字符串查找算法
  *
  */
 public class BoyerMoore {
@@ -15,6 +15,7 @@ public class BoyerMoore {
 	private int right[]; // 记录模式串中每个字符最后出现的下标
 	private String ptn;
 	private int m;
+	private int span = 10;
 	
 	public BoyerMoore(int r, String ptn) {
 		assert ptn != null && ptn.length() > 0;
@@ -29,6 +30,20 @@ public class BoyerMoore {
 	
 	public BoyerMoore(String ptn) {
 		this(R, ptn);
+	}
+	
+	
+	String highlight(String s) {
+		int index = search(s);
+		if (index >= 0) {
+			int start = index - span;
+			start = (start < 0) ? 0 : start;
+			int end = index + m + span;
+			end = (end > s.length()) ? s.length() : end;
+			return s.substring(start, index) + "<em>" + ptn + "</em>"
+					+ s.substring(index + m, end);
+		}
+		return s;
 	}
 	
 	

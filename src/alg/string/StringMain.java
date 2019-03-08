@@ -5,8 +5,8 @@ import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
 
-import alg.string.pattern.BoyerMoore;
 import alg.string.pattern.BruteForce;
+import alg.string.pattern.RabinKarp;
 
 public class StringMain {
 	
@@ -39,7 +39,9 @@ public class StringMain {
 //		BoyerMoore bm = new BoyerMoore(pattern);
 //		System.out.println(bm.search(txt));
 		
-		
+		// 4. RabinKarp
+		RabinKarp rk = new RabinKarp(pattern);
+		System.out.println(rk.search(txt));
 	}
 	
 }
