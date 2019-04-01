@@ -2,7 +2,6 @@ package simplejava.bytecode;
 
 import java.io.File;
 import java.io.FileOutputStream;
-import java.io.IOException;
 
 import org.objectweb.asm.Opcodes;
 
