@@ -1,4 +1,4 @@
-package simplejava.concurrent;
+package simplejava.concurrent.lock;
 
 import java.util.LinkedList;
 import java.util.List;

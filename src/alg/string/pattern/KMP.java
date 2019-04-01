@@ -48,9 +48,11 @@ public class KMP {
 		for(int c = 0; c < R; ++ c) dfa[c][0] = 0;
 		dfa[ptn.charAt(0)][0] = 1;
 		for(int x = 0, j = 1; j < m; ++ j) {
+			// unmatch transition
 			for(int c = 0; c < R; ++ c) 
-				dfa[c][j] = dfa[c][x]; // unmatch transition
-			dfa[ptn.charAt(j)][j] = j + 1; // match transition
+				dfa[c][j] = dfa[c][x]; 
+			// match transition
+			dfa[ptn.charAt(j)][j] = j + 1; 
 			x = dfa[ptn.charAt(j)][x];
 		}
 	}
