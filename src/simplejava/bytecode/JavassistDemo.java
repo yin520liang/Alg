@@ -8,7 +8,11 @@ import javassist.ClassPool;
 import javassist.CtClass;
 import javassist.CtMethod;
 import javassist.CtNewMethod;
-
+/**
+ * Javassist使用示例
+ * Javassist可以方便的生成字节码层面的代理
+ * @title JavassistDemo
+ */
 public class JavassistDemo {
 
 	public static void main(String[] args) {
